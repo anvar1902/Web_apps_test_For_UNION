@@ -1,15 +1,17 @@
+import logging
+import asyncio
 from aiogram import Bot, Dispatcher, types
 from aiogram.types.web_app_info import WebAppInfo
 from aiogram.filters.command import Command
-import asyncio
 
+logging.basicConfig(level=logging.INFO)
 bot = Bot("7087738518:AAHlbhjjopmRndLecg6eQyN-GmwXWIgtWFg")
 dp = Dispatcher()
 
 @dp.message(Command("start"))
 async def start(message: types.Message):
     kb = [
-        [types.KeyboardButton(text="Открыть кликер", web_app=WebAppInfo(url="https://anvar1902.github.io/Web_apps_test_For_UNION/"))]
+        [types.KeyboardButton(text="Открыть кликер", web_app=WebAppInfo(url="https://anvar1902.github.io/Web_apps_test_For_UNION"))]
     ]
 
     keyboard = types.ReplyKeyboardMarkup(
