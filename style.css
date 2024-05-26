@@ -22,25 +22,26 @@ html {
     align-items: flex-end;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    border: 1px solid #000000;
     border-radius: 25%;
     width: 100%;
-    height: 50vh;
-    background-color: #5b005b;
+    height: 10vh;
+    background-color: #5a015a;
 }
 
 .nav-element {
-    width: 100%;
+    width: 10vh;
     height: 100%;
     border-radius: 25%;
+    border-color: #5b005b;
     background-color: #5b005b;
 }
 
 .selected-nav-element {
-    width: 100%;
+    width: 10vh;
     height: 100%;
     border-radius: 25%;
-    background-color: #808080;
+    border-color: #cfc0cf;
+    background-color: #cfc0cf;
 }
 
 .clicker {
