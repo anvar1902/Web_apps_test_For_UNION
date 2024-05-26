@@ -13,13 +13,20 @@ body {
     background-color: var(--tg-theme-bg-color);
 }
 
-.navigation-block {
+.nav-block {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     width: 100%;
     height: 100vh;
     background-color: var(--tg-theme-primary-bg-color);
+}
+
+.nav-element {
+    width: 100px;
+    height: 100px;
+    flex-grow: 1;
 }
 
 .clicker {
