@@ -47,12 +47,12 @@ body {
 }
 
 .clicker {
-    font-size: 14vh;
+    font-size: 18vh;
     border: 10px solid #000000;
     border-radius: 100%;
     margin-top: 10px;
-    height: 40vh;
-    width: 40vh;
+    height: 50vh;
+    width: 50vh;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
