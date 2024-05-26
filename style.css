@@ -56,7 +56,3 @@ body {
     background-clip: text;
     background-image: linear-gradient(to bottom, #FF4500, #FFD700);
 }
-
-button:hover {
-    background-color: var(--tg-theme-secondary-bg-color);
-}
