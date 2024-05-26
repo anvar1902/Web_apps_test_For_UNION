@@ -10,12 +10,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     color: var(--tg-theme-text-color);
-    background-color: var(--tg-theme-bg-color);
+    background-color: #05005b;
 }
 
-html {
-    background-image: linear-gradient(to bottom right, #05005b, #5b005b)
-}
 
 .nav-menu {
     display: flex;
