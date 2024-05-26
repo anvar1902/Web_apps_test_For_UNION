@@ -13,6 +13,10 @@ body {
     background-color: var(--tg-theme-bg-color);
 }
 
+html {
+    background-image: linear-gradient(to bottom right, #05005b, #5b005b)
+}
+
 .nav-block {
     display: flex;
     align-items: flex-end;
@@ -22,13 +26,14 @@ body {
     border-radius: 25%;
     width: 100%;
     height: 50vh;
-    background-color: var(--tg-theme-primary-bg-color);
+    background-color: #5b005b;
 }
 
 .nav-element {
     width: 100%;
     height: 100%;
     border-radius: 25%;
+    background-color: #5b005b;
 }
 
 .selected-nav-element {
