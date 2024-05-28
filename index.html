@@ -29,7 +29,6 @@
     </footer>
     <script src="https://telegram.org/js/telegram_web_app.js"></script>
     <script>
-        let tg = window.Telegram.WebApp;
         const clicker = document.querySelector('.clicker');
         const coinsCountDisplay = document.querySelector('#coins-count-display');
         const energyCountDisplay = document.querySelector('#energy-count-display');
@@ -45,10 +44,10 @@
             }
         });
         let data = {
-            clicks: 1;
+            clicks: 1
         }
+        console.log(data);
 
-        tg.sendData(JSON.stringify(data))
     </script>
 </body>
 </html>
