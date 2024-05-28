@@ -44,6 +44,11 @@
                 energyCountDisplay.textContent = '⚡️' + energyCount + '/1000';
             }
         });
+        let data = {
+            clicks: 1;
+        }
+
+        tg.sendData(JSON.stringify(data))
     </script>
 </body>
 </html>
