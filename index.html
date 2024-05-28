@@ -28,5 +28,21 @@
         </nav>
     </footer>
     <script src="https://telegram.org/js/telegram_web_app.js"></script>
+    <script>
+        const clicker = document.querySelector('.clicker');
+        const coinsCountDisplay = document.querySelector('#coins-count-display');
+        const energyCountDisplay = document.querySelector('#energy-count-display');
+        let coinsCount = 0;
+        let energyCount = 500;
+
+        clicker.addEventListener('click', () => {
+            if (energyCount > 0) {
+                coinsCount++;
+                coinsCountDisplay.textContent = coinsCount +'$FTR';
+                energyCount--;
+                energyCountDisplay.textContent = '⚡️' + energyCount + '/1000';
+            }
+        });
+    </script>
 </body>
 </html>
