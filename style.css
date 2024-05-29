@@ -47,7 +47,7 @@ body {
     color: #FFFFFF;
 }
 
-.clicker {
+#clicker {
     font-size: 14vh;
     border: 10px solid #000000;
     border-radius: 100%;
