@@ -13,7 +13,7 @@
     </header>
     <main style="margin-top: 5%;">
         <div style="display: flex; justify-content: center;"><p id="coins-count-display" class="fire-gradient" style="font-size: 30px;">0 $FTR</p></div>
-        <div style="display: flex; justify-content: center;"><button class="clicker"><span class="fire-gradient">$FTR</span></button></div>
+        <div style="display: flex; justify-content: center;"><button id="clicker"><span class="fire-gradient">$FTR</span></button></div>
         <p id="energy-count-display" class="fire-gradient" style="font-size: 30px; margin-top: 5%;">⚡️500/1000</p>
     </main>
     <footer>
@@ -29,23 +29,22 @@
     </footer>
     <script src="https://telegram.org/js/telegram_web_app.js"></script>
     <script>
-        const clicker = document.querySelector('.clicker');
+        const clicker = document.querySelector('#clicker');
         const coinsCountDisplay = document.querySelector('#coins-count-display');
         const energyCountDisplay = document.querySelector('#energy-count-display');
         let coinsCount = 0;
         let energyCount = 500;
+        tg.expand();
 
         clicker.addEventListener('click', () => {
             if (energyCount > 0) {
+                tg.sendData()
                 coinsCount++;
                 coinsCountDisplay.textContent = coinsCount +'$FTR';
                 energyCount--;
                 energyCountDisplay.textContent = '⚡️' + energyCount + '/1000';
             }
         });
-        let data = {
-            clicks: 1
-        }
         console.log(data);
 
     </script>
