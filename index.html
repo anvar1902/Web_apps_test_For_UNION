@@ -35,11 +35,9 @@
         let coinsCount = 0;
         let energyCount = 500;
 
-        tg.expand();
 
         clicker.addEventListener('click', () => {
             if (energyCount > 0) {
-                tg.sendData()
                 coinsCount++;
                 coinsCountDisplay.textContent = coinsCount +'$FTR';
                 energyCount--;
