@@ -40,23 +40,23 @@
 
         clicker.addEventListener('click', () => {
             if (energyCount > 0) {
+                tg.sendData(JSON.stringify({ action: 'click' }));
                 coinsCount++;
-                coinsCountDisplay.textContent = coinsCount +'$FTR';
+                coinsCountDisplay.textContent = coinsCount + '$FTR';
                 energyCount--;
                 energyCountDisplay.textContent = '⚡️' + energyCount + '/1000';
             }
         });
 
         function updateData() {
-        fetch(dataUrl)
             .then(response => response.json())
             .then(data => {
-                energyDisplay.textContent = `Energy: ${data.energy}`;
-                coinsDisplay.textContent = `Coins: ${data.coins}`;
+                energyCountDisplay.textContent = `⚡️${data.energy}`;
+                coinsCountDisplay.textContent = `${data.coins} $FTR`;
             })
-            .catch(error => console.error('Error fetching data:', error));
         }
 
+        setInterval(updateData, 1000);
     </script>
 </body>
 </html>
